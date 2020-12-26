@@ -1,0 +1,105 @@
+body {
+  background-color: rgb(240, 230, 140);
+  margin: 30px 60px;
+  
+}
+
+nav {
+  border: 2px solid brown;
+  background-color: beige;
+  vertical-align: top;
+  float: left;
+  width: 15%;
+  font-size: 15px;
+  color: brown;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+
+section {
+  border: brown solid 2px;
+  padding: 0 15px 0 15px;
+  width: 78%;
+  float: left;
+  background-color: rgba(222, 184, 135, 0.748);
+  color: brown;
+  font-size: 20px;
+  margin: 0 0 30px 10px;
+}
+
+
+a {
+  color: brown;
+  text-decoration: underline;
+}
+
+figure {
+  margin-right: 10px;
+  float: right;
+  margin-left: 30px;
+}
+
+
+header {
+  width: 70%;
+  color: brown;
+  font-size: 30px;
+  position: relative;
+  left: 192px;
+}
+
+.linija {
+  font-style: italic;
+  font-size: 30px;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid brown;
+}
+
+h2 {
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+table {
+  font-family: 'Courier New', Courier, monospace;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 2px solid brown;
+}
+
+td {
+  padding: 12px;
+  font-weight: 600;
+}
+
+th {
+  padding: 18px;
+}
+
+tr.praskozorje {
+  background-color: lightgoldenrodyellow;
+}
+
+tr.predvecerje {
+  background-color: khaki;
+}
+
+#naslov {
+  font-weight: 900;
+  color: beige;
+  background-color: rgba(165, 42, 42, 0.378);
+}
+
+td.delo {
+  text-decoration: underline;
+}
