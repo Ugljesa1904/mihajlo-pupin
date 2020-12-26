@@ -66,6 +66,7 @@ h2 {
 }
 
 table {
+  text-align: center;
   font-family: 'Courier New', Courier, monospace;
   border-collapse: collapse;
   width: 80%;
