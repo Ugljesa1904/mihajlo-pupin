@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-Animacija</title>
+</head>
+<style>
+  #opala {
+    margin: 20px auto;
+    width: 600px;
+    height: 492px;
+    background-color: #050210;
+    filter: blur(0.5px);
+  }
+
+  #pokusaj {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+    position: relative;
+    top: 120px;
+    margin: 0 auto;
+
+    background: linear-gradient(to right, #fb5dad, #55fb9f, #b97aff);
+
+    /*
+    border-left: 20px solid #fb5dad;
+    border-right: 20px solid #b97aff;
+    border-top: 20px solid #55fb9f;
+    border-bottom: 20px solid #55fb9f;
+    */
+
+
+    filter: drop-shadow(5px 5px 100px white);
+
+
+    animation-name: animacija;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+
+
+  }
+
+  #pokusaj:hover {
+    animation-play-state: paused;
+  }
+
+  #pokusaj::before {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+    background-color: #17102e;
+
+
+  }
+
+  #pokusaj::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    top: 20px;
+    margin: 0 auto;
+
+    animation-name: animacija-1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+  }
+
+  /*@keyframes animacija-2 {
+    0% {
+      transform: scale(0.1);
+      background-color: #262235;
+    }
+
+    12.5% {
+      transform: scale(0.2);
+      background-color: #262235;
+    }
+
+    25% {
+      transform: scale(0.3);
+      background-color: #262235;
+    }
+
+    37.5% {
+      transform: scale(0.4);
+      background-color: #231e31;
+    }
+
+    50% {
+      transform: scale(0.5);
+      background-color: #262235;
+    }
+
+    62.5% {
+      transform: scale(0.6);
+      background-color: #231e31;
+    }
+
+    75% {
+      transform: scale(0.7);
+      background-color: #201a30;
+    }
+
+    87.5% {
+      transform: scale(0.8);
+      background-color: #201a30;
+    }
+
+    93.5% {
+      transform: scale(0.9);
+      background-color: black;
+    }
+
+    100% {
+      transform: scale(1);
+      background-color: black;
+    }
+  
+  }
+  */
+
+
+  @keyframes animacija-1 {
+    0% {
+      transform: scale(0.1);
+      background-color: #262235;
+    }
+
+    12.5% {
+      transform: scale(0.2);
+      background-color: #262235;
+    }
+
+    25% {
+      transform: scale(0.3);
+      background-color: #262235;
+    }
+
+    37.5% {
+      transform: scale(0.4);
+      background-color: #231e31;
+    }
+
+    50% {
+      transform: scale(0.5);
+      background-color: #262235;
+    }
+
+    62.5% {
+      transform: scale(0.6);
+      background-color: #231e31;
+    }
+
+    75% {
+      transform: scale(0.7);
+      background-color: #201a30;
+    }
+
+    87.5% {
+      transform: scale(0.8);
+      background-color: #201a30;
+    }
+
+
+
+
+
+  }
+
+  @keyframes animacija {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    12.5% {
+      transform: rotate(45deg);
+    }
+
+    25% {
+      transform: rotate(90deg)
+    }
+
+    37.5% {
+      transform: rotate(135deg);
+    }
+
+    50% {
+      transform: rotate(180deg)
+    }
+
+    62.5% {
+      transform: rotate(225deg);
+    }
+
+    75% {
+      transform: rotate(270deg)
+    }
+
+    87.5% {
+      transform: rotate(315deg);
+    }
+
+    100% {
+      transform: rotate(360deg)
+    }
+  }
+</style>
+
+<body>
+
+
+  <div id="opala">
+    <div id="pokusaj"></div>
+  </div>
+
+  </div>
+
+</body>
+
+</html>
